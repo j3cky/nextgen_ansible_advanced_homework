@@ -1,3 +1,58 @@
 ---
+- name: Create instances
+  os_server:
+    cloud: openstack
+    name: "{{ item }}"
+    image: rhel-guest
+    key_name: ansible_ssh
+    flavor: m2.medium
+    security_groups: apps
+    delete_fip: yes
+    wait: no
+    nics:
+      - net-name: int_network
+    meta: "group=app, deployment_name=QA"
+    userdata: |
+      #!/bin/bash
+      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+  loop:
+     - app1
+     - app2
 
+- name: Create instances
+  os_server:
+    cloud: openstack
+    name: "appdb1"
+    image: rhel-guest
+    key_name: ansible_ssh
+    flavor: m2.medium
+    security_groups: db
+    delete_fip: yes
+    wait: no
+    nics:
+      - net-name: int_network
+    meta: "group=db, deployment_name=QA"
+    userdata: |
+      #!/bin/bash
+      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+
+- name: Create instances
+  os_server:
+    cloud: openstack
+    name: "frontend"
+    image: rhel-guest
+    key_name: ansible_ssh
+    flavor: m2.medium
+    security_groups: frontend
+    delete_fip: yes
+    wait: no
+    nics:
+      - net-name: int_network
+    meta: "group=db, deployment_name=QA"
+    userdata: |
+      #!/bin/bash
+      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
 # tasks file for osp.servers
