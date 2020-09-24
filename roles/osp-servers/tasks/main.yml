@@ -68,7 +68,7 @@
   loop:
      - app1
      - app2
-     - db
+     - appdb1
      - frontend
 
 # tasks file for osp.servers
