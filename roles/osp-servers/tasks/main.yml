@@ -23,7 +23,7 @@
 - name: Create instances
   os_server:
     cloud: openstack
-    name: "appdb1"
+    name: appdb1
     image: rhel-guest
     key_name: ansible_ssh
     flavor: m1.medium
@@ -41,7 +41,7 @@
 - name: Create instances
   os_server:
     cloud: openstack
-    name: "frontend"
+    name: frontend
     image: rhel-guest
     key_name: ansible_ssh
     flavor: m1.medium
@@ -55,4 +55,20 @@
       #!/bin/bash
       curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+
+- name: Add floating IP to instances
+  os_floating_ip:
+    cloud: openstack
+    state: "{{ openstack_server_state | default('present') }}"
+    reuse: yes
+    server: "{{ item  }}"
+    network: ext_network
+    wait: true
+    timeout: 180
+  loop:
+     - app1
+     - app2
+     - db
+     - frontend
+
 # tasks file for osp.servers
