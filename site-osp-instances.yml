@@ -1,5 +1,7 @@
-- hosts: localhost
-  connection: local
+---
+- name: Manage OpenStack Servers
+  hosts: localhost
+  #connection: local
   become: no
   gather_facts: true
   roles:
