@@ -30,8 +30,4 @@
     baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-optional-rpms
     enabled: no
 
-- name: install base tools and packages
-  yum:
-    name: '*'
-    state: latest
 
