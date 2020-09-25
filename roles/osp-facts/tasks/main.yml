@@ -1,6 +1,5 @@
 ---
 # tasks file for osp-facts
-<<<<<<< HEAD
 #   - name: Fetch Instance Info
 #     os_server_info:
 #      cloud: openstack
