@@ -1,5 +1,1 @@
-- name: Install haproxy  packages
-   package:
-     name: "{{ payload }}"
-     state: present
 
