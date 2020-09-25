@@ -15,17 +15,50 @@
     baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-rh-common-rpms
 - name: Add multiple repositories into the same file (1/2)
   yum_repository:
-    name: epel
+    name: rhel-8-for-x86_64-appstream-rpms
     description: EPEL YUM repo
     file: external_repos
-    baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-appstream-rpms
     gpgcheck: no
-
-- name: Add multiple repositories into the same file (2/2)
+    enabled: 1
+- name: Add multiple repositories into the same file (1/2)
   yum_repository:
-    name: rpmforge
-    description: RPMforge YUM repo
+    name: rhel-8-for-x86_64-baseos-rpms
+    description: EPEL YUM repo
     file: external_repos
-    baseurl: http://apt.sw.be/redhat/el7/en/$basearch/rpmforge
-    mirrorlist: http://mirrorlist.repoforge.org/el7/mirrors-rpmforge
-    enabled: no
+    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-baseos-rpms
+    gpgcheck: no
+    enabled: 1
+- name: Add multiple repositories into the same file (1/3)
+  yum_repository:
+    name: rhel-8-for-x86_64-highavailability-rpms
+    description: EPEL YUM repo
+    file: external_repos
+    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-highavailability-rpms
+    gpgcheck: no
+    enabled: 1
+- name: Add multiple repositories into the same file (1/4)
+  yum_repository:
+    name: openstack-16-for-rhel-8-x86_64-rpms
+    description: EPEL YUM repo
+    file: external_repos
+    baseurl: http://192.0.2.253/repos/openstack-16-for-rhel-8-x86_64-rpms
+    gpgcheck: no
+    enabled: 1
+- name: Add multiple repositories into the same file (1/5)
+  yum_repository:
+    name: fast-datapath-for-rhel-8-x86_64-rpms
+    description: EPEL YUM repo
+    file: external_repos
+    baseurl: http://192.0.2.253/repos/fast-datapath-for-rhel-8-x86_64-rpms
+    gpgcheck: no
+    enabled: 1
+- name: Add multiple repositories into the same file (1/6)
+  yum_repository:
+    name: ansible-2.8-for-rhel-8-x86_64-rpms
+    description: EPEL YUM repo
+    file: external_repos
+    baseurl: http://192.0.2.253/repos/ansible-2.8-for-rhel-8-x86_64-rpms
+    gpgcheck: no
+    enabled: 1
+
