@@ -8,6 +8,10 @@
     replace: 'Defaults  !requiretty'
     backup: yes
 
+- rpm_key:
+    state: present
+    key: http://apt.sw.be/RPM-GPG-KEY.dag.txt
+
 - name: enable repos
   yum_repository:
     name: rhel-7-server-rh-common-rpms
