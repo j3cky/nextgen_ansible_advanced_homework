@@ -10,7 +10,7 @@
 
 - rpm_key:
     state: present
-    key: http://apt.sw.be/RPM-GPG-KEY.dag.txt
+    key: https://www.opentlc.com/download/ansible_bootcamp/repo/RPM-GPG-KEY-PGDG-96
 
 - name: enable repos
   yum_repository:
