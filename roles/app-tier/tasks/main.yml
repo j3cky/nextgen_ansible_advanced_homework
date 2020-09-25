@@ -1,1 +1,6 @@
+---
+ - name: Install load balancer packages
+   package:
+     name: "{{ payload }}"
+     state: present
 
