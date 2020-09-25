@@ -13,48 +13,19 @@
     name: rhel-7-server-rh-common-rpms
     description: EPEL YUM repo
     baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-rh-common-rpms
-
 - name: Add multiple repositories into the same file (1/2)
   yum_repository:
-    name: rhel-7-server-extras-rpms
+    name: epel
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-extras-rpms
-    gpgcheck: yes
-    enabled: 1
+    baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+    gpgcheck: no
 
 - name: Add multiple repositories into the same file (2/2)
   yum_repository:
-    name: rhel-7-server-optional-rpms
+    name: rpmforge
     description: RPMforge YUM repo
     file: external_repos
-    baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-optional-rpms
-    enabled: 1
-    gpccheck: yes
-
-- name: Add multiple repositories into the same file (2/3)
-  yum_repository:
-    name: rhel-server-rhscl-7-rpms
-    description: RPMforge YUM repo
-    file: external_repos
-    baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-server-rhscl-7-rpms
-    enabled: 1
-    gpccheck: yes
-
-- name: Add multiple repositories into the same file (2/4)
-  yum_repository:
-    name: rhel-7-server-ansible-2.9-rpms
-    description: RPMforge YUM repo
-    file: external_repos
-    baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-ansible-2.9-rpms
-    enabled: 1
-    gpccheck: yes
-
-- name: Add multiple repositories into the same file (2/5)
-  yum_repository:
-    name: Extra Packages for Enterprise Linux 7
-    description: RPMforge YUM repo
-    file: external_repos
-    baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/epel/
-    enabled: 1
-    gpccheck: yes
+    baseurl: http://apt.sw.be/redhat/el7/en/$basearch/rpmforge
+    mirrorlist: http://mirrorlist.repoforge.org/el7/mirrors-rpmforge
+    enabled: no
