@@ -14,8 +14,10 @@
     meta: "group=apps, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+  copy:
+     src: /root/.ssh/openstack.pem
+     dest: /tmp/openstack.pem
   loop:
      - app1
      - app2
@@ -35,8 +37,10 @@
     meta: "group=appdbs, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+  copy:
+     src: /root/.ssh/openstack.pem
+     dest: /tmp/openstack.pem
 
 - name: Create instances
   os_server:
@@ -53,8 +57,10 @@
     meta: "group=frontends, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      curl -o /tmp/openstack.pub http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
+  copy:
+     src: /root/.ssh/openstack.pem
+     dest: /tmp/openstack.pem
 
 - name: Add floating IP to instances
   os_floating_ip:

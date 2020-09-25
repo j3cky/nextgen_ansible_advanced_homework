@@ -1,4 +1,4 @@
- - name: Install flask packages
+ - name: Install  packages
    package:
      name: "{{ payload }}"
      state: present
