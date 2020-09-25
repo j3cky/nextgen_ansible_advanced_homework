@@ -15,7 +15,7 @@
     userdata: |
       #!/bin/bash
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-  copy:
+    copy:
      src: /root/.ssh/openstack.pem
      dest: /tmp/openstack.pem
   loop:
@@ -38,7 +38,7 @@
     userdata: |
       #!/bin/bash
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-  copy:
+    copy:
      src: /root/.ssh/openstack.pem
      dest: /tmp/openstack.pem
 
@@ -58,7 +58,7 @@
     userdata: |
       #!/bin/bash
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-  copy:
+    copy:
      src: /root/.ssh/openstack.pem
      dest: /tmp/openstack.pem
 
