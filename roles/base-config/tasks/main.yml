@@ -9,6 +9,12 @@
     backup: yes
 
 - name: enable repos
- 
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: http://192.168.0.5/repos/rhel-7-server-rpms 
 - name: install base tools and packages
+  yum:
+    name: '*'
+    state: latest
 
