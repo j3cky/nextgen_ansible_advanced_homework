@@ -19,50 +19,51 @@
     baseurl: http://d3s3zqyaz8cp2d.cloudfront.net/repos/tower/3.7.0-4/rhel-7-server-rh-common-rpms
 - name: Add multiple repositories into the same file (1/2)
   yum_repository:
-    name: rhel-8-for-x86_64-appstream-rpms
+    name: Red Hat Enterprise Linux 7
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-appstream-rpms
+    baseurl: http://admin.na.shared.opentlc.com/repos/tower//3.5.3-1/rhel-7-server-rpms
     gpgcheck: no
     enabled: 1
 - name: Add multiple repositories into the same file (1/2)
   yum_repository:
-    name: rhel-8-for-x86_64-baseos-rpms
+    name: Red Hat Enterprise Linux 7 Common
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-baseos-rpms
+    baseurl: http://admin.na.shared.opentlc.com/repos/tower//3.5.3-1/rhel-7-server-rh-common-rpms
     gpgcheck: no
     enabled: 1
 - name: Add multiple repositories into the same file (1/3)
   yum_repository:
-    name: rhel-8-for-x86_64-highavailability-rpms
+    name: Red Hat Enterprise Linux 7 Extras
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/rhel-8-for-x86_64-highavailability-rpms
+    baseurl: http://admin.na.shared.opentlc.com/repos/tower//3.5.3-1/rhel-7-server-extras-rpms
     gpgcheck: no
     enabled: 1
 - name: Add multiple repositories into the same file (1/4)
   yum_repository:
-    name: openstack-16-for-rhel-8-x86_64-rpms
+    name: Red Hat Enterprise Linux 7 Optional
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/openstack-16-for-rhel-8-x86_64-rpms
+    baseurl: http://admin.na.shared.opentlc.com/repos/tower//3.5.3-1/rhel-7-server-optional-rpms
     gpgcheck: no
     enabled: 1
 - name: Add multiple repositories into the same file (1/5)
   yum_repository:
-    name: fast-datapath-for-rhel-8-x86_64-rpms
+    name: Red Hat Enterprise Linux 7 Optional
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/fast-datapath-for-rhel-8-x86_64-rpms
+    baseurl: http://admin.na.shared.opentlc.com/repos/tower//3.5.3-1/rhel-server-rhscl-7-rpms
     gpgcheck: no
     enabled: 1
 - name: Add multiple repositories into the same file (1/6)
   yum_repository:
-    name: ansible-2.8-for-rhel-8-x86_64-rpms
+    name: Extra Packages for Enterprise Linux 7 - $basearch
     description: EPEL YUM repo
     file: external_repos
-    baseurl: http://192.0.2.253/repos/ansible-2.8-for-rhel-8-x86_64-rpms
+    baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch
+    mirrorlist: http://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
     gpgcheck: no
     enabled: 1
 
