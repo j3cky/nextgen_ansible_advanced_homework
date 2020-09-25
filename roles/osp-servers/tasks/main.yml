@@ -14,10 +14,7 @@
     meta: "group=apps, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-    copy:
-     src: /root/.ssh/openstack.pem
-     dest: /tmp/openstack.pem
+      cat ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTCYfp/LvJHpyMqZBeXoX/jHz/LB4yAeRBMYLf3V/kopcIetQQHYIkgW96LB9CmQABX9heoopsDK8tj5IZgz//dPqfYapm+S4mz8jIOFvIwmUle6iM2KdBvMGqIBKiURVoTwQZZMoWzZEqmaHFrRuNrZCDUJ8B3LmNBqp3UQtnYUuG2Vtg/q94Wqlv7nGiBJ/bT0HhPjrsFGXJs29F354rK3Xp9KeKO9RB2PYNgIJ22KFNOZ3IV67I5bd2uJQXHEuQYqAenHh/cIt1GicOVGHKr9RQOngz4093/tuVfiwhIyKZVWu4Xm3G8x6v9nyg4ifi5XSBNvXBCuXSdivv+yd >> /home/cloud-user/.ssh/authorized_keys
   loop:
      - app1
      - app2
@@ -37,10 +34,7 @@
     meta: "group=appdbs, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-    copy:
-     src: /root/.ssh/openstack.pem
-     dest: /tmp/openstack.pem
+      cat ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTCYfp/LvJHpyMqZBeXoX/jHz/LB4yAeRBMYLf3V/kopcIetQQHYIkgW96LB9CmQABX9heoopsDK8tj5IZgz//dPqfYapm+S4mz8jIOFvIwmUle6iM2KdBvMGqIBKiURVoTwQZZMoWzZEqmaHFrRuNrZCDUJ8B3LmNBqp3UQtnYUuG2Vtg/q94Wqlv7nGiBJ/bT0HhPjrsFGXJs29F354rK3Xp9KeKO9RB2PYNgIJ22KFNOZ3IV67I5bd2uJQXHEuQYqAenHh/cIt1GicOVGHKr9RQOngz4093/tuVfiwhIyKZVWu4Xm3G8x6v9nyg4ifi5XSBNvXBCuXSdivv+yd >> /home/cloud-user/.ssh/authorized_keys
 
 - name: Create instances
   os_server:
@@ -57,10 +51,7 @@
     meta: "group=frontends, deployment_name=QA"
     userdata: |
       #!/bin/bash
-      cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
-    copy:
-     src: /root/.ssh/openstack.pem
-     dest: /tmp/openstack.pem
+      cat ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTCYfp/LvJHpyMqZBeXoX/jHz/LB4yAeRBMYLf3V/kopcIetQQHYIkgW96LB9CmQABX9heoopsDK8tj5IZgz//dPqfYapm+S4mz8jIOFvIwmUle6iM2KdBvMGqIBKiURVoTwQZZMoWzZEqmaHFrRuNrZCDUJ8B3LmNBqp3UQtnYUuG2Vtg/q94Wqlv7nGiBJ/bT0HhPjrsFGXJs29F354rK3Xp9KeKO9RB2PYNgIJ22KFNOZ3IV67I5bd2uJQXHEuQYqAenHh/cIt1GicOVGHKr9RQOngz4093/tuVfiwhIyKZVWu4Xm3G8x6v9nyg4ifi5XSBNvXBCuXSdivv+yd >> /home/cloud-user/.ssh/authorized_keys
 
 - name: Add floating IP to instances
   os_floating_ip:
