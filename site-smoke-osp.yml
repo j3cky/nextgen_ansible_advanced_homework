@@ -6,11 +6,11 @@
 
 ---
 - name: End to end smoke tests
-  hosts: workstation
+  hosts: appdbs
   gather_facts: true
   become: true
-  roles:
-  - name: osp-facts
+  #roles:
+  #- name: osp-facts
   tags:
     - smoketest  
 
