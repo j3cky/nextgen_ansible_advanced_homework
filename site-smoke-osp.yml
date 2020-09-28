@@ -3,11 +3,18 @@
 #  tasks:
 #  - name: OpenStack servers
 #  - name: Curl website
+- hosts: workstation
+  gather_facts: true
+  roles:
+  - name: osp-facts
+
 ---
 - name: End to end smoke tests
-  hosts: apps:appdbs
+  hosts: workstation
   gather_facts: true
   become: true
+  roles:
+  - name: osp-facts
   tags:
     - smoketest  
 
