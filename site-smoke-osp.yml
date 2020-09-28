@@ -1,8 +1,43 @@
-- hosts: workstation
-  gather_facts: false
-  tasks:
+#- hosts: workstation
+#  gather_facts: false
+#  tasks:
 #  - name: OpenStack servers
 #  - name: Curl website
+---
+- name: Deploy haproxy load balancer
+  hosts: load_balancers
+  gather_facts: false 
+  become: true
+
+  tags:
+    - load_balancers
+  roles:
+    - lb
+  #tasks:
+    #- name: Install load balancer packages
+      #package:
+        #name: "{{ load_balancer_packages }}"
+        #state: present
+
+    #- name: Configure haproxy load balancing
+      #template:
+        #src: templates/haproxy.cfg.j2
+        #dest: /etc/haproxy/haproxy.cfg
+      #notify: restart_haproxy
+
+    #- name: Enable Haproxy
+      #service:
+        #name: haproxy
+        #state: started
+        #enabled: true
+  handlers:
+    - name: restart_haproxy
+      service:
+        name: haproxy
+        state: restarted
+  #roles:
+    #- lb
+
 - name: End to end smoke tests
   hosts: app_servers:database_servers
   gather_facts: true
@@ -47,9 +82,4 @@
       retries: 10
       delay: 1
       register: result
-      #delegate_to: localhost
-  - name: Fail if 'Ansible has done its job' is not in the page content
-    fail:
-    when: "'Ansible has done its job' not in webpage.results[0].content"
-    tags:
-      - osp.smoke
+      delegate_to: localhost
