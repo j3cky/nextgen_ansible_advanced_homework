@@ -3,14 +3,10 @@
   tasks:
   - name: Curl website
     uri:
-      url: "http://localhost"
+      #  url: "http://frontend1.{{ GUID }}.example.opentlc.com/ping"
+      url: "http://localhost/ping"
       return_content: yes
-      status_code: 200
-    register: webpage
-        
-  - debug: var=webpage.content
-
-  - name: Fail if 'Ansible has done its job' is not in the page content
-    fail:
-    when: "'Ansible has done its job' not in webpage.content"
-
+    until: '"alive" in result.content'
+    retries: 10
+    delay: 1
+    register: result
