@@ -1,0 +1,541 @@
+[
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-7"
+    ],
+    "tag": "centos-7",
+    "url": "http://mirror.biznetgio.com/centos/7/os/x86_64/"
+  },
+  {
+    "arch": "aarch64",
+    "installSource": true,
+    "os": [
+      "centos-7"
+    ],
+    "tag": "centos-7",
+    "url": "http://mirror.centos.org/altarch/7/os/aarch64/"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-7.9.2009"
+    ],
+    "tag": "centos-7.9.2009",
+    "url": "http://mirror.biznetgio.com/centos/7.9.2009/os/x86_64/"
+  },
+  {
+    "arch": "x86_64",
+    "components": [
+      "atomic",
+      "centosplus",
+      "cr",
+      "dotnet",
+      "extras",
+      "fasttrack",
+      "os",
+      "rt",
+      "updates"
+    ],
+    "distribution": "7",
+    "os": [
+      "centos-7",
+      "centos-7.3.1611",
+      "centos-7.4.1708",
+      "centos-7.5.1804",
+      "centos-7.6.1810",
+      "centos-7.7.1908",
+      "centos-7.8.2003",
+      "centos-7.9.2009"
+    ],
+    "tag": "centos-7-everything",
+    "url": "http://mirror.biznetgio.com/centos"
+  },
+  {
+    "arch": "aarch64",
+    "components": [
+      "centosplus",
+      "cr",
+      "extras",
+      "fasttrack",
+      "os",
+      "updates"
+    ],
+    "distribution": "7",
+    "os": [
+      "centos-7",
+      "centos-7.3.1611",
+      "centos-7.4.1708",
+      "centos-7.5.1804",
+      "centos-7.6.1810",
+      "centos-7.7.1908",
+      "centos-7.8.2003",
+      "centos-7.9.2009"
+    ],
+    "tag": "centos-7-everything",
+    "url": "http://mirror.centos.org/altarch"
+  },
+  {
+    "arch": "any",
+    "distribution": "7",
+    "os": [
+      "centos-7",
+      "centos-7.3.1611",
+      "centos-7.4.1708",
+      "centos-7.5.1804",
+      "centos-7.6.1810",
+      "centos-7.7.1908",
+      "centos-7.8.2003",
+      "centos-7.9.2009"
+    ],
+    "tag": "epel-7",
+    "url": "http://mirrors.kernel.org/fedora-epel/7/$basearch"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos8"
+    ],
+    "tag": "centos8",
+    "url": "http://mirror.biznetgio.com/centos/8/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-8.4"
+    ],
+    "tag": "centos-8.4",
+    "url": "http://mirror.biznetgio.com/centos/8/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-8"
+    ],
+    "tag": "centos-8",
+    "url": "http://mirror.biznetgio.com/centos/8/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-8.1.1911"
+    ],
+    "tag": "centos-8.1.1911",
+    "url": "http://mirror.biznetgio.com/centos/8.1.1911/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-8.2.2004"
+    ],
+    "tag": "centos-8.2.2004",
+    "url": "http://mirror.biznetgio.com/centos/8.2.2004/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "centos-8.3.2011"
+    ],
+    "tag": "centos-8.3.2011",
+    "url": "http://mirror.biznetgio.com/centos/8.3.2011/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "installSource": true,
+    "os": [
+      "sledgehammer8"
+    ],
+    "tag": "sledgehammer8",
+    "url": "http://mirrors.edge.kernel.org/centos/8.3.2011/BaseOS/x86_64/os"
+  },
+  {
+    "arch": "x86_64",
+    "components": [
+      "AppStream",
+      "BaseOS",
+      "Devel",
+      "HighAvailability",
+      "PowerTools",
+      "centosplus",
+      "extras",
+      "fasttrack"
+    ],
+    "distribution": "8",
+    "os": [
+      "sledgehammer8",
+      "centos-8",
+      "centos8",
+      "centos-8.4",
+      "centos-8.1.1911",
+      "centos-8.2.2004",
+      "centos-8.3.2011"
+    ],
+    "tag": "centos-8-everything",
+    "url": "http://mirror.biznetgio.com/centos"
+  },
+  {
+    "arch": "any",
+    "distribution": "8",
+    "os": [
+      "sledgehammer8",
+      "centos-8",
+      "centos8",
+      "centos-8.4",
+      "centos-8.1.1911",
+      "centos-8.2.2004",
+      "centos-8.3.2011"
+    ],
+    "tag": "epel-8-everything",
+    "url": "http://mirrors.kernel.org/fedora-epel/8/Everything/$basearch"
+  },
+  {
+    "arch": "any",
+    "distribution": "8",
+    "os": [
+      "sledgehammer8",
+      "centos-8",
+      "centos8",
+      "centos-8.4",
+      "centos-8.1.1911",
+      "centos-8.2.2004",
+      "centos-8.3.2011"
+    ],
+    "tag": "epel-8-modular",
+    "url": "http://mirrors.kernel.org/fedora-epel/8/Modular/$basearch"
+  },
+  {
+    "arch": "any",
+    "distribution": "8",
+    "os": [
+      "sledgehammer8",
+      "centos-8",
+      "centos8",
+      "centos-8.4",
+      "centos-8.1.1911",
+      "centos-8.2.2004",
+      "centos-8.3.2011"
+    ],
+    "tag": "certs-8",
+    "url": "https://forensics.cert.org/centos/cert/8/$basearch"
+  },
+  {
+    "arch": "amd64",
+    "bootloc": "http://mirror.biznetgio.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/",
+    "components": [
+      "main",
+      "restricted",
+      "multiverse",
+      "universe"
+    ],
+    "distribution": "xenial",
+    "installSource": true,
+    "os": [
+      "ubuntu-16.04"
+    ],
+    "tag": "ubuntu-16.04",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "xenial-backports",
+    "os": [
+      "ubuntu-16.04"
+    ],
+    "tag": "ubuntu-16.04-backports",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "xenial-updates",
+    "os": [
+      "ubuntu-16.04"
+    ],
+    "tag": "ubuntu-16.04-updates",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "xenial-security",
+    "os": [
+      "ubuntu-16.04"
+    ],
+    "securitySource": true,
+    "tag": "ubuntu-16.04-security",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "amd64",
+    "bootloc": "http://mirror.biznetgio.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/",
+    "components": [
+      "main",
+      "restricted",
+      "multiverse",
+      "universe"
+    ],
+    "distribution": "bionic",
+    "installSource": true,
+    "os": [
+      "ubuntu-18.04"
+    ],
+    "tag": "ubuntu-18.04",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "bionic-backports",
+    "os": [
+      "ubuntu-18.04"
+    ],
+    "tag": "ubuntu-18.04-backports",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "bionic-updates",
+    "os": [
+      "ubuntu-18.04"
+    ],
+    "securitySource": true,
+    "tag": "ubuntu-18.04-updates",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "restricted",
+      "universe",
+      "multiverse"
+    ],
+    "distribution": "bionic-security",
+    "os": [
+      "ubuntu-18.04"
+    ],
+    "tag": "ubuntu-18.04-security",
+    "url": "http://mirror.biznetgio.com/ubuntu/"
+  },
+  {
+    "arch": "amd64",
+    "bootloc": "http://mirror.biznetgio.com/debian/dists/buster/main/installer-amd64/current/images/netboot/debian-installer/amd64/",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "buster",
+    "installSource": true,
+    "os": [
+      "debian-10"
+    ],
+    "tag": "debian-10",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "buster-updates",
+    "os": [
+      "debian-10"
+    ],
+    "tag": "debian-10-updates",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "buster-backports",
+    "os": [
+      "debian-10"
+    ],
+    "tag": "debian-10-backports",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "contrib",
+      "main",
+      "non-free"
+    ],
+    "distribution": "buster/updates",
+    "os": [
+      "debian-10"
+    ],
+    "securitySource": true,
+    "tag": "debian-10-security",
+    "url": "http://security.debian.org/debian-security/"
+  },
+  {
+    "arch": "amd64",
+    "bootloc": "http://mirror.biznetgio.com/debian/dists/stretch/main/installer-amd64/current/images/netboot/debian-installer/amd64/",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "stretch",
+    "installSource": true,
+    "os": [
+      "debian-9"
+    ],
+    "tag": "debian-9-install",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "stretch-updates",
+    "os": [
+      "debian-9"
+    ],
+    "tag": "debian-9-updates",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "stretch-backports",
+    "os": [
+      "debian-9"
+    ],
+    "tag": "debian-9-backports",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "contrib",
+      "main",
+      "non-free"
+    ],
+    "distribution": "stretch/updates",
+    "os": [
+      "debian-9"
+    ],
+    "securitySource": true,
+    "tag": "debian-9-security",
+    "url": "http://security.debian.org/debian-security/"
+  },
+  {
+    "arch": "amd64",
+    "bootloc": "http://mirror.biznetgio.com/debian/dists/jessie/main/installer-amd64/current/images/netboot/debian-installer/amd64/",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "jessie",
+    "installSource": true,
+    "os": [
+      "debian-8"
+    ],
+    "tag": "debian-8-install",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "jessie-updates",
+    "os": [
+      "debian-8"
+    ],
+    "tag": "debian-8-updates",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "main",
+      "contrib",
+      "non-free"
+    ],
+    "distribution": "jessie-backports",
+    "os": [
+      "debian-8"
+    ],
+    "tag": "debian-8-backports",
+    "url": "http://mirror.biznetgio.com/debian"
+  },
+  {
+    "arch": "any",
+    "components": [
+      "contrib",
+      "main",
+      "non-free"
+    ],
+    "distribution": "jessie/updates",
+    "os": [
+      "debian-8"
+    ],
+    "securitySource": true,
+    "tag": "debian-8-security",
+    "url": "http://security.debian.org/debian-security/"
+  },
+  {
+    "arch": "amd64",
+    "installSource": true,
+    "os": [
+      "sledgehammer/46e1a213a0e9b54e413369a0bcb22ed6a97cfc9f"
+    ],
+    "tag": "sledgehammer/46e1a213a0e9b54e413369a0bcb22ed6a97cfc9f",
+    "url": "http://rackn-sledgehammer.s3-website-us-west-2.amazonaws.com/sledgehammer/46e1a213a0e9b54e413369a0bcb22ed6a97cfc9f/"
+  }
+]
